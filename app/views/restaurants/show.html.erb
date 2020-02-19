@@ -1,0 +1,17 @@
+<h1><%= @restaurant.name %> (<%= @restaurant.category %>)</h1>
+
+<br>
+
+<%= link_to "See reviews", restaurant_reviews_path(@restaurant), class: "btn btn-primary" %>
+
+<p>Adress: <%= @restaurant.address %></p>
+<p>Phone Number: <%= @restaurant.phone_number %></p>
+
+<br>
+<br>
+
+<%= link_to "Write review", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+
+<%= link_to "Back to list", restaurants_path, class: "btn btn-primary" %>
+
+
